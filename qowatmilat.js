@@ -45,11 +45,11 @@ async function updateCache(crew) {
 async function loadCrewDetails(symbol, access_token) {
     const reqOptions = {
         method: 'POST',
-        uri: 'https://stt.disruptorbeam.com/archetype/batch_update',
+        uri: 'https://app.startrektimelines.com/archetype/batch_update',
         form: {
             'symbols[]': symbol,
             'versions[]': 0,
-            client_api: 17
+            client_api: 21
         },
         headers: {
             Authorization: 'Bearer ' + Buffer.from(access_token).toString('base64')
