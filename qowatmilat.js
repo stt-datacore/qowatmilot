@@ -198,3 +198,4 @@ async function loadCrew(symbol, access_token) {
 }
 
 exports.retrieveOpenKnowledge = retrieveOpenKnowledge;
+exports.loadCrewDetails = loadCrewDetails;
